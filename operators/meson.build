@@ -1,5 +1,5 @@
 shared_library(
-    'vector_add',
-    'vector_add.cu',
+    'sgemm',
+    'sgemm.cu',
     install : false
 )
