@@ -57,6 +57,12 @@ meson compile -C build
 
 # 500个请求测试
 ./build/bench/runtime_bench --requests 500
+
+# 使用RL调度
+./build/bench/runtime_bench --scheduler RL --requests 5000
+
+# 比较所有算法
+./build/bench/runtime_bench --compare 
 ```
 
 

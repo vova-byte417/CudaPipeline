@@ -6,8 +6,9 @@ scheduler_lib = static_library(
         'fcfs_scheduler.cpp',
         'priority_scheduler.cpp',
         'sjf_scheduler.cpp',
+        'rl_scheduler.cpp',
         'estimator.cpp',
-        'trace_loader.cpp'
+        'trace_loader.cpp',
     ]),
     include_directories : include_directories('../include')
 )

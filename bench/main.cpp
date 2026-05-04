@@ -11,6 +11,7 @@
 #include "scheduler/sjf_scheduler.h"
 #include "scheduler/fcfs_scheduler.h"
 #include "scheduler/priority_scheduler.h"
+#include "scheduler/rl_scheduler.h"
 #include "metrics/metrics.h"
 #include "request.h"
 #include "estimator.h"
@@ -72,6 +73,7 @@ std::unique_ptr<Scheduler> create_scheduler(const std::string& type) {
     if (type == "FCFS") return std::make_unique<FCFS_Scheduler>();
     if (type == "SJF") return std::make_unique<SJFScheduler>();
     if (type == "Priority") return std::make_unique<PriorityScheduler>();
+    if (type == "RL") return std::make_unique<RLScheduler>(true);
     LOG_WARN("Unknown scheduler: " << type << ", using SJF");
     return std::make_unique<SJFScheduler>();
 }
