@@ -1,4 +1,5 @@
 #include "scheduler/sjf_scheduler.h"
+#include "runtime/batch.h"
 #include <vector>
 #include <algorithm>
 
@@ -8,32 +9,29 @@ bool SJFScheduler::select_batch(RequestQueue& queue, Batch& batch)
     batch.total_input_size = 0;
 
     std::vector<Request> candidates;
-    Request req;
-
-    // 拉取足够候选任务
-    while (candidates.size() < MAX_BATCH_SIZE * 3 && queue.pop(req)) {
-        candidates.push_back(req);
-    }
+    
+    const size_t candidate_count = static_cast<size_t>(MAX_BATCH_SIZE) * 3;
+    queue.pop_batch(candidates, candidate_count);
 
     if (candidates.empty()) {
         return false;
     }
 
-    // Shortest Job First: 按 estimated_exec_time 排序
     std::sort(candidates.begin(), candidates.end(),
         [](const Request& a, const Request& b) {
             return a.estimated_exec_time < b.estimated_exec_time;
         });
 
-    // 组成 Batch（可加入 total_input_size 限制）
-    for (size_t i = 0; i < candidates.size() && batch.requests.size() < MAX_BATCH_SIZE; ++i) {
+    // 修复：类型转换
+    const size_t batch_size = std::min(static_cast<size_t>(MAX_BATCH_SIZE), candidates.size());
+    for (size_t i = 0; i < batch_size; ++i) {
         batch.requests.push_back(candidates[i]);
         batch.total_input_size += candidates[i].input_size;
     }
 
-    // 未选中的放回队列
-    for (size_t i = batch.requests.size(); i < candidates.size(); ++i) {
-        queue.push(candidates[i]);
+    if (candidates.size() > batch_size) {
+        std::vector<Request> unselected(candidates.begin() + batch_size, candidates.end());
+        queue.push_front_batch(unselected);
     }
 
     return !batch.requests.empty();

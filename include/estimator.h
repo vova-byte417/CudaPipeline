@@ -1,12 +1,20 @@
 #pragma once
+
 #include "request.h"
 #include <string>
+#include <unordered_map>
 
-class Estimator {
+class Estimator
+{
 public:
+    struct OperatorProfile {
+        double time_per_element_ns = 1.0;
+        size_t memory_overhead_bytes = 0;
+    };
+
     static void estimate(Request& req);
+    static void register_profile(const std::string& op_name, const OperatorProfile& profile);
 
 private:
-    static float simple_exec_time_model(int input_size, const std::string& op_name);
-    static uint32_t flops_model(int input_size, const std::string& op_name);
+    static std::unordered_map<std::string, OperatorProfile> profiles_;
 };
