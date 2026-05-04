@@ -14,12 +14,17 @@
 #include <cuda_runtime.h>
 
 #include "cuda_backend.h"
+
+#include "operators/sgemm_impl.h"
+
 #include "queue.h"
 #include "runtime/worker.h"
 #include "scheduler/sjf_scheduler.h"
 #include "scheduler/fcfs_scheduler.h"
 #include "scheduler/priority_scheduler.h"
 #include "scheduler/rl_scheduler.h"
+
+
 #include "metrics/metrics.h"
 #include "request.h"
 #include "estimator.h"
@@ -237,6 +242,14 @@ BenchmarkResult run_benchmark_internal(const BenchConfig& cfg) {
     
     // 初始化
     CUDABackend backend(0, 4);
+
+    // ========== 就加这3行！==========
+    SGEMMOperator sgemm;              // 1. 创建SGEMM算子实例
+    backend.set_operator(&sgemm);     // 2. 注入给Backend
+    // ========== 就加这3行！==========
+
+
+
     RequestQueue queue;
     Metrics metrics;
     auto scheduler = create_scheduler(cfg.scheduler_type);

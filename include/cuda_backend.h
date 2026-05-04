@@ -9,6 +9,14 @@
 #include <vector>
 #include <mutex>
 
+// 加在文件最开头，其他都不动！
+class IOperator {
+public:
+    virtual ~IOperator() = default;
+    virtual bool execute(int n, float* A, float* B, float* C, cudaStream_t stream) = 0;
+};
+
+
 class CUDABackend : public Backend
 {
 public:
@@ -20,11 +28,15 @@ public:
     bool submit_batch(Batch& batch) override;
     void shutdown() override;
 
+    void set_operator(IOperator* op) { op_impl_ = op; }
+
 private:
     int device_id_;
     std::vector<cudaStream_t> streams_;
     int next_stream_ = 0;
     mutable std::mutex stream_mutex_;
+
+    IOperator* op_impl_ = nullptr;
 
     // 内存池
     std::unordered_map<size_t, std::vector<void*>> memory_pool_;

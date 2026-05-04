@@ -41,7 +41,7 @@ bool CUDABackend::initialize() {
         return false;
     }
 
-    sgemm_func_ = reinterpret_cast<sgemm_func_t>(dlsym(operator_handle_, "sgemm"));
+    sgemm_func_ = reinterpret_cast<sgemm_func_t>(dlsym(operator_handle_, "sgemm_tiled"));
     if (!sgemm_func_) {
         std::cerr << "Failed to find sgemm symbol: " << dlerror() << std::endl;
         return false;
@@ -115,7 +115,12 @@ bool CUDABackend::submit(Request& req) {
     CHECK_CUDA_RET_FALSE(cudaMemcpyAsync(d_b, req.h_b, data_size, cudaMemcpyHostToDevice, stream));
 
     // 直接调用sgemm！
-    sgemm_func_(d_a, d_b, d_c, n);
+    // sgemm_func_(d_a, d_b, d_c, n);
+    if (op_impl_) {
+    op_impl_->execute(n, d_a, d_b, d_c, streams_[0]);
+    } else if (sgemm_func_) {
+        sgemm_func_(d_a, d_b, d_c, n);
+    }
 
     CHECK_CUDA_RET_FALSE(cudaMemcpyAsync(req.h_c, d_c, data_size, cudaMemcpyDeviceToHost, stream));
 
