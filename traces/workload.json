@@ -1,0 +1,6002 @@
+[
+  {
+    "id": 1,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 2,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 3,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 4,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 5,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 6,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 7,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 8,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 9,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 10,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 11,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 12,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 13,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 14,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 15,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 16,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 17,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 18,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 19,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 20,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 21,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 22,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 23,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 24,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 25,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 26,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 27,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 28,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 29,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 30,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 31,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 32,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 33,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 34,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 35,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 36,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 37,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 38,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 39,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 40,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 41,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 42,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 43,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 44,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 45,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 46,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 47,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 48,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 49,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 50,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 51,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 52,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 53,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 54,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 55,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 56,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 57,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 58,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 59,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 60,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 61,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 62,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 63,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 64,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 65,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 66,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 67,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 68,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 69,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 70,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 71,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 72,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 73,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 74,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 75,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 76,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 77,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 78,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 79,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 80,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 81,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 82,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 83,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 84,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 85,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 86,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 87,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 88,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 89,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 90,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 91,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 92,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 93,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 94,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 95,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 96,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 97,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 98,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 99,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 100,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 101,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 102,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 103,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 104,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 105,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 106,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 107,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 108,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 109,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 110,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 111,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 112,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 113,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 114,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 115,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 116,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 117,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 118,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 119,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 120,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 121,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 122,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 123,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 124,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 125,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 126,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 127,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 128,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 129,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 130,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 131,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 132,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 133,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 134,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 135,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 136,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 137,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 138,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 139,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 140,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 141,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 142,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 143,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 144,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 145,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 146,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 147,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 148,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 149,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 150,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 151,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 152,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 153,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 154,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 155,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 156,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 157,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 158,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 159,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 160,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 161,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 162,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 163,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 164,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 165,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 166,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 167,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 168,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 169,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 170,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 171,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 172,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 173,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 174,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 175,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 176,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 177,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 178,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 179,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 180,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 181,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 182,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 183,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 184,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 185,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 186,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 187,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 188,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 189,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 190,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 191,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 192,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 193,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 194,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 195,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 196,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 197,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 198,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 199,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 200,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 201,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 202,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 203,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 204,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 205,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 206,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 207,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 208,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 209,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 210,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 211,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 212,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 213,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 214,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 215,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 216,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 217,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 218,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 219,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 220,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 221,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 222,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 223,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 224,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 225,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 226,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 227,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 228,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 229,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 230,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 231,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 232,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 233,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 234,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 235,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 236,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 237,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 238,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 239,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 240,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 241,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 242,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 243,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 244,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 245,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 246,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 247,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 248,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 249,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 250,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 251,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 252,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 253,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 254,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 255,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 256,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 257,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 258,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 259,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 260,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 261,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 262,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 263,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 264,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 265,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 266,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 267,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 268,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 269,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 270,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 271,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 272,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 273,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 274,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 275,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 276,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 277,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 278,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 279,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 280,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 281,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 282,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 283,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 284,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 285,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 286,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 287,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 288,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 289,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 290,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 291,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 292,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 293,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 294,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 295,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 296,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 297,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 298,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 299,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 300,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 301,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 302,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 303,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 304,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 305,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 306,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 307,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 308,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 309,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 310,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 311,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 312,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 313,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 314,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 315,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 316,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 317,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 318,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 319,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 320,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 321,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 322,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 323,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 324,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 325,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 326,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 327,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 328,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 329,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 330,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 331,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 332,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 333,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 334,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 335,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 336,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 337,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 338,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 339,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 340,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 341,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 342,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 343,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 344,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 345,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 346,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 347,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 348,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 349,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 350,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 351,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 352,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 353,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 354,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 355,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 356,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 357,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 358,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 359,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 360,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 361,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 362,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 363,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 364,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 365,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 366,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 367,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 368,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 369,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 370,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 371,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 372,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 373,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 374,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 375,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 376,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 377,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 378,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 379,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 380,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 381,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 382,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 383,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 384,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 385,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 386,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 387,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 388,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 389,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 390,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 391,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 392,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 393,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 394,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 395,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 396,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 397,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 398,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 399,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 400,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 401,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 402,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 403,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 404,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 405,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 406,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 407,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 408,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 409,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 410,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 411,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 412,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 413,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 414,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 415,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 416,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 417,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 418,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 419,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 420,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 421,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 422,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 423,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 424,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 425,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 426,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 427,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 428,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 429,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 430,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 431,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 432,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 433,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 434,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 435,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 436,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 437,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 438,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 439,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 440,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 441,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 442,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 443,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 444,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 445,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 446,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 447,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 448,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 449,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 450,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 451,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 452,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 453,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 454,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 455,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 456,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 457,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 458,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 459,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 460,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 461,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 462,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 463,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 464,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 465,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 466,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 467,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 468,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 469,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 470,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 471,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 472,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 473,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 474,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 475,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 476,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 477,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 478,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 479,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 480,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 481,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 482,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 483,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 484,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 485,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 486,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 487,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 488,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 489,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 490,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 491,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 492,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 493,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 494,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 495,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 496,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 497,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 498,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 499,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 500,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 501,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 502,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 503,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 504,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 505,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 506,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 507,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 508,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 509,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 510,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 511,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 512,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 513,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 514,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 515,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 516,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 517,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 518,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 519,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 520,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 521,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 522,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 523,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 524,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 525,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 526,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 527,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 528,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 529,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 530,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 531,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 532,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 533,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 534,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 535,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 536,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 537,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 538,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 539,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 540,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 541,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 542,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 543,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 544,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 545,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 546,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 547,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 548,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 549,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 550,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 551,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 552,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 553,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 554,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 555,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 556,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 557,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 558,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 559,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 560,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 561,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 562,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 563,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 564,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 565,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 566,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 567,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 568,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 569,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 570,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 571,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 572,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 573,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 574,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 575,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 576,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 577,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 578,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 579,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 580,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 581,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 582,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 583,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 584,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 585,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 586,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 587,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 588,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 589,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 590,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 591,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 592,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 593,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 594,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 595,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 596,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 597,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 598,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 599,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 600,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 601,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 602,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 603,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 604,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 605,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 606,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 607,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 608,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 609,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 610,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 611,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 612,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 613,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 614,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 615,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 616,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 617,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 618,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 619,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 620,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 621,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 622,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 623,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 624,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 625,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 626,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 627,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 628,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 629,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 630,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 631,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 632,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 633,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 634,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 635,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 636,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 637,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 638,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 639,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 640,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 641,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 642,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 643,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 644,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 645,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 646,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 647,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 648,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 649,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 650,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 651,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 652,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 653,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 654,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 655,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 656,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 657,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 658,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 659,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 660,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 661,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 662,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 663,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 664,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 665,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 666,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 667,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 668,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 669,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 670,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 671,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 672,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 673,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 674,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 675,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 676,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 677,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 678,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 679,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 680,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 681,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 682,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 683,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 684,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 685,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 686,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 687,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 688,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 689,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 690,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 691,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 692,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 693,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 694,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 695,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 696,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 697,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 698,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 699,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 700,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 701,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 702,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 703,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 704,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 705,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 706,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 707,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 708,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 709,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 710,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 711,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 712,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 713,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 714,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 715,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 716,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 717,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 718,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 719,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 720,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 721,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 722,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 723,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 724,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 725,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 726,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 727,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 728,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 729,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 730,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 731,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 732,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 733,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 734,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 735,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 736,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 737,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 738,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 739,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 740,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 741,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 742,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 743,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 744,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 745,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 746,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 747,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 748,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 749,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 750,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 751,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 752,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 753,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 754,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 755,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 756,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 757,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 758,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 759,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 760,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 761,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 762,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 763,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 764,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 765,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 766,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 767,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 768,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 769,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 770,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 771,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 772,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 773,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 774,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 775,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 776,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 777,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 778,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 779,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 780,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 781,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 782,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 783,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 784,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 785,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 786,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 787,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 788,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 789,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 790,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 791,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 792,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 793,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 794,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 795,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 796,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 797,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 798,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 799,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 800,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 801,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 802,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 803,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 804,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 805,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 806,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 807,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 808,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 809,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 810,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 811,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 812,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 813,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 814,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 815,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 816,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 817,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 818,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 819,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 820,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 821,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 822,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 823,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 824,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 825,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 826,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 827,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 828,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 829,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 830,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 831,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 832,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 833,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 834,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 835,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 836,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 837,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 838,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 839,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 840,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 841,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 842,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 843,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 844,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 845,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 846,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 847,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 848,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 849,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 850,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 851,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 852,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 853,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 854,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 855,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 856,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 857,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 858,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 859,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 860,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 861,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 862,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 863,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 864,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 865,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 866,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 867,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 868,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 869,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 870,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 871,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 872,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 873,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 874,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 875,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 876,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 877,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 878,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 879,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 880,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 881,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 882,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 883,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 884,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 885,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 886,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 887,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 888,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 889,
+    "input_size": 2048,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 890,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 891,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 892,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 893,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 894,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 895,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 896,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 897,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 898,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 899,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 900,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 901,
+    "input_size": 16384,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 902,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 903,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 904,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 905,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 906,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 907,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 908,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 909,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 910,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 911,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 912,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 913,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 914,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 915,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 916,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 917,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 918,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 919,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 920,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 921,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 922,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 923,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 924,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 925,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 926,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 927,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 928,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 929,
+    "input_size": 32768,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 930,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 931,
+    "input_size": 512,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 932,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 933,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 934,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 935,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 936,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 937,
+    "input_size": 16384,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 938,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 939,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 940,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 941,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 942,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 943,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 944,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 945,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 946,
+    "input_size": 2048,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 947,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 948,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 949,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 950,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 951,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 952,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "vector_add"
+  },
+  {
+    "id": 953,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 954,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 955,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 956,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 957,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 958,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 959,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 960,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 961,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 962,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 963,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 964,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 965,
+    "input_size": 8192,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 966,
+    "input_size": 4096,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 967,
+    "input_size": 32768,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 968,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 969,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 970,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 971,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "conv2d"
+  },
+  {
+    "id": 972,
+    "input_size": 1024,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 973,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 974,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 975,
+    "input_size": 2048,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 976,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 977,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 978,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 979,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 980,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 981,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 982,
+    "input_size": 16384,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 983,
+    "input_size": 512,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 984,
+    "input_size": 2048,
+    "priority": 0,
+    "operator": "vector_add"
+  },
+  {
+    "id": 985,
+    "input_size": 512,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 986,
+    "input_size": 8192,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 987,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "conv2d"
+  },
+  {
+    "id": 988,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 989,
+    "input_size": 1024,
+    "priority": 1,
+    "operator": "vector_add"
+  },
+  {
+    "id": 990,
+    "input_size": 16384,
+    "priority": 2,
+    "operator": "matmul"
+  },
+  {
+    "id": 991,
+    "input_size": 512,
+    "priority": 0,
+    "operator": "conv2d"
+  },
+  {
+    "id": 992,
+    "input_size": 4096,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 993,
+    "input_size": 8192,
+    "priority": 3,
+    "operator": "matmul"
+  },
+  {
+    "id": 994,
+    "input_size": 4096,
+    "priority": 1,
+    "operator": "matmul"
+  },
+  {
+    "id": 995,
+    "input_size": 8192,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 996,
+    "input_size": 4096,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 997,
+    "input_size": 32768,
+    "priority": 3,
+    "operator": "vector_add"
+  },
+  {
+    "id": 998,
+    "input_size": 32768,
+    "priority": 0,
+    "operator": "matmul"
+  },
+  {
+    "id": 999,
+    "input_size": 1024,
+    "priority": 2,
+    "operator": "conv2d"
+  },
+  {
+    "id": 1000,
+    "input_size": 1024,
+    "priority": 3,
+    "operator": "matmul"
+  }
+]
