@@ -35,6 +35,12 @@ void Worker::loop()
 {
     while (running_)
     {
+        // 优雅等待：没有请求时不占用 CPU
+        bool has_request = queue_->wait_for_request(std::chrono::milliseconds(50));
+        if (!has_request) {
+            continue;  // 超时，继续循环检查 running_ 标志
+        }
+
         Batch batch;
 
         auto start = std::chrono::high_resolution_clock::now();
@@ -44,27 +50,23 @@ void Worker::loop()
         {
             auto mid = std::chrono::high_resolution_clock::now();
 
-            // 2. 执行 GPU backend
+            // 2. 执行 GPU backend - TRUE BATCH PROCESSING
             std::cout << "[Worker] executing batch with " << batch.requests.size() << " requests." << std::endl;
-
-            // 逐个请求提交并输出 request_id
-            for (auto& req : batch.requests)
-            {
-                std::cout << "[Worker] executing request with ID " << req.request_id << std::endl;
-                backend_->submit(req);  // 提交单个请求
-            }
+            backend_->submit_batch(batch);  // 批量提交，不是逐个！
 
             auto end = std::chrono::high_resolution_clock::now();
 
-            // 3. metrics：queue latency
+            // 3. metrics：记录各种指标
             metrics_->record_queue_latency(
                 std::chrono::duration_cast<std::chrono::nanoseconds>(mid - start).count()
             );
 
-            // 4. metrics：execution latency
             metrics_->record_execution_latency(
                 std::chrono::duration_cast<std::chrono::nanoseconds>(end - mid).count()
             );
+
+            metrics_->record_batch_size(static_cast<int>(batch.requests.size()));
+            metrics_->increment_requests(static_cast<int>(batch.requests.size()));
         }
     }
 }

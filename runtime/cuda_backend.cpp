@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <vector>
+#include <cstring>
 
 
 #define CHECK_CUDA(x)                                   \
@@ -152,26 +153,140 @@ bool CUDABackend::submit(Request& req)
     return true;
 }
 
+bool CUDABackend::alloc_batch_memory(Batch& batch, BatchMemory& mem)
+{
+    // Calculate total elements across all requests
+    mem.total_elements = 0;
+    for (const auto& req : batch.requests) {
+        mem.total_elements += req.input_size;
+    }
+
+    if (mem.total_elements == 0) {
+        return false;
+    }
+
+    const size_t bytes = mem.total_elements * sizeof(float);
+    std::cout << "[Batch] Allocating " << bytes << " bytes for " 
+              << batch.requests.size() << " requests (total " 
+              << mem.total_elements << " elements)" << std::endl;
+
+    // Use Memory Pool instead of direct cudaMalloc
+    mem.d_a = static_cast<float*>(mem_pool_.alloc(bytes));
+    mem.d_b = static_cast<float*>(mem_pool_.alloc(bytes));
+    mem.d_c = static_cast<float*>(mem_pool_.alloc(bytes));
+
+    if (!mem.d_a || !mem.d_b || !mem.d_c) {
+        free_batch_memory(mem);
+        return false;
+    }
+
+    // Host output buffer
+    mem.h_c_batch.resize(mem.total_elements);
+
+    return true;
+}
+
+void CUDABackend::free_batch_memory(BatchMemory& mem)
+{
+    const size_t bytes = mem.total_elements * sizeof(float);
+    
+    // Return to memory pool instead of cudaFree
+    if (mem.d_a) mem_pool_.free(mem.d_a, bytes);
+    if (mem.d_b) mem_pool_.free(mem.d_b, bytes);
+    if (mem.d_c) mem_pool_.free(mem.d_c, bytes);
+    
+    mem.d_a = mem.d_b = mem.d_c = nullptr;
+}
+
+bool CUDABackend::submit_batch_optimized(Batch& batch)
+{
+    if (batch.requests.empty()) {
+        return false;
+    }
+
+    std::cout << "[backend] OPTIMIZED batch execute size = " 
+              << batch.requests.size() << std::endl;
+
+    BatchMemory mem;
+    if (!alloc_batch_memory(batch, mem)) {
+        return false;
+    }
+
+    // ------------------------------------------------------------------------
+    // Step 1: Copy ALL request inputs to contiguous GPU memory in ONE H2D copy
+    // ------------------------------------------------------------------------
+    std::vector<float> h_a_batch(mem.total_elements);
+    std::vector<float> h_b_batch(mem.total_elements);
+
+    size_t offset = 0;
+    for (const auto& req : batch.requests) {
+        std::memcpy(h_a_batch.data() + offset, req.h_a, req.input_size * sizeof(float));
+        std::memcpy(h_b_batch.data() + offset, req.h_b, req.input_size * sizeof(float));
+        offset += req.input_size;
+    }
+
+    // Single H2D copy for all inputs
+    CHECK_CUDA(cudaMemcpyAsync(mem.d_a, h_a_batch.data(), 
+                               mem.total_elements * sizeof(float), 
+                               cudaMemcpyHostToDevice, stream_));
+    CHECK_CUDA(cudaMemcpyAsync(mem.d_b, h_b_batch.data(), 
+                               mem.total_elements * sizeof(float), 
+                               cudaMemcpyHostToDevice, stream_));
+
+    // ------------------------------------------------------------------------
+    // Step 2: Single kernel launch for ALL elements
+    // ------------------------------------------------------------------------
+    if (vector_add_) {
+        std::cout << "[Batch] Calling kernel with total n = " << mem.total_elements << std::endl;
+        vector_add_(mem.d_a, mem.d_b, mem.d_c, static_cast<int>(mem.total_elements));
+    } else {
+        std::cerr << "Error: vector_add_ is nullptr!" << std::endl;
+        free_batch_memory(mem);
+        return false;
+    }
+
+    // ------------------------------------------------------------------------
+    // Step 3: Single D2H copy for ALL outputs
+    // ------------------------------------------------------------------------
+    CHECK_CUDA(cudaMemcpyAsync(mem.h_c_batch.data(), mem.d_c, 
+                               mem.total_elements * sizeof(float), 
+                               cudaMemcpyDeviceToHost, stream_));
+
+    // Wait for all operations to complete
+    cudaError_t err = cudaStreamSynchronize(stream_);
+    if (err != cudaSuccess) {
+        std::cerr << "cudaStreamSynchronize failed: " << cudaGetErrorString(err) << std::endl;
+        free_batch_memory(mem);
+        return false;
+    }
+
+    // ------------------------------------------------------------------------
+    // Step 4: Distribute results back to individual requests
+    // ------------------------------------------------------------------------
+    offset = 0;
+    for (auto& req : batch.requests) {
+        std::memcpy(req.h_c, mem.h_c_batch.data() + offset, req.input_size * sizeof(float));
+        offset += req.input_size;
+    }
+
+    // Verify first request results
+    if (!batch.requests.empty()) {
+        auto& req0 = batch.requests[0];
+        std::cout << "[Batch] req[" << req0.request_id << "] result[0] = " << req0.h_c[0] << std::endl;
+        std::cout << "[Batch] req[" << req0.request_id << "] result[1] = " << req0.h_c[1] << std::endl;
+        std::cout << "[Batch] req[" << req0.request_id << "] result[2] = " << req0.h_c[2] << std::endl;
+    }
+
+    free_batch_memory(mem);
+    return true;
+}
+
 bool CUDABackend::submit_batch(
     Batch& batch
 )
 {
-    std::cout
-        << "[backend] batch execute size = "
-        << batch.requests.size()
-        << std::endl;
-
-    for (auto& req : batch.requests)
-    {
-        std::cout
-            << "[backend] dispatch req "
-            << req.request_id
-            << std::endl;
-
-        submit(req);
-    }
-
-    return true;
+    // Use optimized batch processing by default
+    return submit_batch_optimized(batch);
 }
 
 void CUDABackend::shutdown()
@@ -182,4 +297,8 @@ void CUDABackend::shutdown()
     {
         dlclose(operator_handle_);
     }
+
+    // Print memory pool stats and clear
+    mem_pool_.print_stats();
+    mem_pool_.clear();
 }
