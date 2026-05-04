@@ -2,6 +2,7 @@
 
 #include <string>
 #include <cstdint>
+#include <chrono>
 
 // 优先级定义
 enum class Priority : int {
@@ -35,7 +36,4 @@ public:
     float* h_a;
     float* h_b;
     float* h_c;
-
-    // timestamp
-    uint64_t enqueue_ts;
 };

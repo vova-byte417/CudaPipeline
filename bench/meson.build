@@ -10,8 +10,7 @@ executable(
         include_directories('../metrics'),
     ],
 
-    link_with : runtime_lib,
-    link_args : ['-lcudart']
+    link_with : runtime_lib
 )
 
 # 优先级调度器 benchmark
@@ -27,8 +26,7 @@ executable(
         include_directories('../metrics'),
     ],
 
-    link_with : runtime_lib,
-    link_args : ['-lcudart']
+    link_with : runtime_lib
 )
 
 # EDF 调度器 benchmark
@@ -44,6 +42,21 @@ executable(
         include_directories('../metrics'),
     ],
 
-    link_with : runtime_lib,
-    link_args : ['-lcudart']
+    link_with : runtime_lib
+)
+
+# RL (强化学习) 调度器 benchmark
+executable(
+    'rl_bench',
+    'rl_bench.cpp',
+
+    include_directories : [
+        include_directories('../include'),
+        include_directories('/usr/include'),
+        include_directories('../runtime'),
+        include_directories('../scheduler'),
+        include_directories('../metrics'),
+    ],
+
+    link_with : runtime_lib
 )

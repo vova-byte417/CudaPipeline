@@ -1,12 +1,14 @@
 #pragma once
 
-#include <cuda_runtime.h>
 #include <unordered_map>
 #include <vector>
 #include <mutex>
 #include <iostream>
 #include <algorithm>
+#include <cstdlib>
+#include <cstring>
 
+// 通用内存池 - 默认使用系统 malloc/free
 class MemoryPool
 {
 public:
@@ -38,12 +40,10 @@ public:
             return ptr;
         }
 
-        // 池里没有，新分配
-        void* ptr = nullptr;
-        cudaError_t err = cudaMalloc(&ptr, bucket_size);
-        if (err != cudaSuccess) {
-            std::cerr << "[MemoryPool] cudaMalloc failed for size " << bucket_size 
-                      << ": " << cudaGetErrorString(err) << std::endl;
+        // 池里没有，新分配（用系统malloc）
+        void* ptr = std::malloc(bucket_size);
+        if (!ptr) {
+            std::cerr << "[MemoryPool] malloc failed for size " << bucket_size << std::endl;
             return nullptr;
         }
 
@@ -72,7 +72,7 @@ public:
 
         for (auto& [size, bucket] : pools_) {
             for (void* ptr : bucket) {
-                cudaFree(ptr);
+                std::free(ptr);
                 total_allocated_ -= size;
             }
         }

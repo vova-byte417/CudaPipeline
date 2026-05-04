@@ -5,7 +5,7 @@
 #include <chrono>
 #include <random>
 
-#include "cuda_backend.h"
+#include "cpu_backend.h"
 #include "priority_queue.h"
 #include "runtime/worker.h"
 #include "scheduler/priority_scheduler.h"
@@ -15,7 +15,7 @@ int main()
 {
     std::cout << "=== Priority Scheduler Benchmark ===\n\n";
 
-    CUDABackend backend;
+    CPUBackend backend;
     PriorityRequestQueue prio_queue;
     PriorityScheduler scheduler;
     Metrics metrics;

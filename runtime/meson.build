@@ -1,21 +1,20 @@
 cc = meson.get_compiler('cpp')
-cuda_dep = cc.find_library(
-    'cudart',
-    dirs : ['/usr/lib/x86_64-linux-gnu']
-)
+
+# 运行时库源文件
+runtime_sources = [
+    'worker.cpp',
+    'cpu_backend.cpp'
+]
+
 runtime_lib = static_library(
     'runtime',
-    files([
-        'cuda_backend.cpp',
-        'worker.cpp'
-    ]),
+    files(runtime_sources),
     include_directories : [
         include_directories('.'),
         include_directories('../include'),
         include_directories('../runtime'),
         include_directories('../scheduler'),
         include_directories('../metrics'),
-    
     ],
-    dependencies : [cuda_dep,metrics_dep,scheduler_dep]
+    dependencies : [metrics_dep, scheduler_dep]
 )

@@ -6,7 +6,7 @@
 #include <random>
 #include <algorithm>
 
-#include "cuda_backend.h"
+#include "cpu_backend.h"
 #include "deadline_queue.h"
 #include "runtime/worker.h"
 #include "scheduler/edf_scheduler.h"

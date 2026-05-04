@@ -1,7 +1,8 @@
 #include <thread>
 #include <chrono>
+#include <iostream>
 
-#include "cuda_backend.h"
+#include "cpu_backend.h"
 #include "queue.h"
 #include "runtime/worker.h"
 
@@ -14,11 +15,15 @@
 
 int main()
 {
+    std::cout << "\n" << std::string(60, '=') << std::endl;
+    std::cout << "           CudaPipeline - Runtime Benchmark           " << std::endl;
+    std::cout << std::string(60, '=') << "\n" << std::endl;
+
     // --------------------------------
     // runtime components
     // --------------------------------
 
-    CUDABackend backend;
+    CPUBackend backend;
 
     RequestQueue queue;
 
@@ -64,7 +69,7 @@ int main()
         req.input_size = n;
         req.output_size = n;
 
-        req.priority = 0;
+        req.priority = Priority::MEDIUM;
 
         req.operator_name = "vector_add";
 
