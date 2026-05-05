@@ -2,7 +2,7 @@ project(
   'cudapipeline',
   ['cpp'],
   version: '2.0.0',
-  default_options: ['cpp_std=c++17', 'warning_level=1']
+  default_options: ['cpp_std=c++17', 'warning_level=1', 'cpp_threads=true']
 )
 
 cpp = meson.get_compiler('cpp')
@@ -11,10 +11,10 @@ cpp = meson.get_compiler('cpp')
 thread_dep = dependency('threads')
 
 # 头文件目录
-inc_dirs = include_directories('include')
-bench_dirs = include_directories('include', '.')
+inc_dirs = include_directories('include', 'tests')
 
-# 编译静态库
+# ========== 核心库 ==========
+
 scheduler_lib = static_library(
   'scheduler',
   'scheduler/fcfs_scheduler.cpp',
@@ -34,22 +34,17 @@ metrics_lib = static_library(
   include_directories: inc_dirs
 )
 
-# Harness 框架库
+# Harness v2.0 企业级框架
 harness_lib = static_library(
   'harness',
   'harness/resource_quota.cpp',
   include_directories: inc_dirs
 )
 
-# CLI 工具
-executable(
-  'cudapipeline',
-  'src/cudapipeline.cpp',
-  include_directories: bench_dirs,
-  link_with: [runtime_lib, scheduler_lib, metrics_lib]
-)
+# ========== 基准测试程序 ==========
 
-# Benchmark 程序
+bench_dirs = include_directories('include', '.', 'tests')
+
 executable(
   'runtime_bench',
   'bench/main.cpp',
@@ -78,11 +73,46 @@ executable(
   link_with: [runtime_lib, scheduler_lib, metrics_lib]
 )
 
-# Harness v2.0 - Skill 隔离框架
+# Harness v2.0 测试
 executable(
   'harness_bench',
   'bench/harness_bench.cpp',
   include_directories: bench_dirs,
   link_with: harness_lib,
+  dependencies: thread_dep
+)
+
+# ========== CLI 工具 ==========
+
+executable(
+  'cudapipeline',
+  'src/cudapipeline.cpp',
+  include_directories: bench_dirs,
+  link_with: [runtime_lib, scheduler_lib, metrics_lib]
+)
+
+# ========== 单元测试 & 集成测试 ==========
+
+# 单元测试源文件
+unit_test_sources = [
+  'tests/main.cpp',
+  'tests/unit/test_resource_quota.cpp',
+  'tests/unit/test_schedulers.cpp',
+]
+
+# 集成测试源文件
+integration_test_sources = [
+  'tests/main.cpp',
+  'tests/unit/test_resource_quota.cpp',
+  'tests/unit/test_schedulers.cpp',
+  'tests/integration/test_end_to_end.cpp',
+]
+
+# 完整测试套件
+executable(
+  'test_runner',
+  integration_test_sources,
+  include_directories: bench_dirs,
+  link_with: [scheduler_lib, harness_lib],
   dependencies: thread_dep
 )
