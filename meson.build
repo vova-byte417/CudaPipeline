@@ -1,7 +1,7 @@
 project(
   'cudapipeline',
   ['cpp'],
-  version: '1.0.0',
+  version: '2.0.0',
   default_options: ['cpp_std=c++17', 'warning_level=1']
 )
 
@@ -12,8 +12,9 @@ thread_dep = dependency('threads')
 
 # 头文件目录
 inc_dirs = include_directories('include')
+bench_dirs = include_directories('include', '.')
 
-# 编译调度器和运行时为静态库
+# 编译静态库
 scheduler_lib = static_library(
   'scheduler',
   'scheduler/fcfs_scheduler.cpp',
@@ -33,21 +34,19 @@ metrics_lib = static_library(
   include_directories: inc_dirs
 )
 
-# Benchmark 程序
-bench_dirs = [
-  include_directories('include'),
-  include_directories('runtime'),
-  include_directories('scheduler'),
-  include_directories('metrics')
-]
+# Harness 框架库
+harness_lib = static_library(
+  'harness',
+  'harness/resource_quota.cpp',
+  include_directories: inc_dirs
+)
 
-# 主 CLI 工具
+# CLI 工具
 executable(
   'cudapipeline',
   'src/cudapipeline.cpp',
   include_directories: bench_dirs,
-  link_with: [runtime_lib, scheduler_lib, metrics_lib],
-  install: true
+  link_with: [runtime_lib, scheduler_lib, metrics_lib]
 )
 
 # Benchmark 程序
@@ -77,4 +76,13 @@ executable(
   'bench/rl_bench.cpp',
   include_directories: bench_dirs,
   link_with: [runtime_lib, scheduler_lib, metrics_lib]
+)
+
+# Harness v2.0 - Skill 隔离框架
+executable(
+  'harness_bench',
+  'bench/harness_bench.cpp',
+  include_directories: bench_dirs,
+  link_with: harness_lib,
+  dependencies: thread_dep
 )
